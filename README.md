@@ -1,8 +1,8 @@
 # Donncha O'Toole
 
-I build practical software for biological data analysis, developer workflows, and consumer products.
+I build practical software for biological data analysis, developer workflows, and product systems.
 
-Current focus: preparing an open-source bioinformatics package for launch.
+Current focus: [dotmatch](https://github.com/Dnncha/dotmatch), a fast exact short-DNA known-target assignment tool for CRISPR guides, barcodes, primers, panels, and whitelists.
 
 ## Work
 
@@ -12,7 +12,9 @@ Current focus: preparing an open-source bioinformatics package for launch.
 
 ## Open source
 
-The main bioinformatics package is being prepared for public release. This profile is being kept intentionally focused around active, maintained work rather than old experiments.
+- [dotmatch](https://github.com/Dnncha/dotmatch): exact short-DNA assignment for genomics workflows
+
+This profile is being kept intentionally focused around active, maintained work rather than old experiments.
 
 ## Contact
 
