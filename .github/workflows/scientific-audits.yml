@@ -1,0 +1,38 @@
+name: Scientific audit counterexamples
+on:
+  push:
+    branches: [main]
+    paths: ['research/**', '.github/workflows/scientific-audits.yml']
+  pull_request:
+    paths: ['research/**', '.github/workflows/scientific-audits.yml']
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Install audit dependencies
+        run: python -m pip install -r research/requirements.txt
+      - name: Execute compact numerical regressions
+        run: |
+          set -o pipefail
+          python research/scmultibench-silhouette/minimal_reproducer.py | tee asw-run.log
+          python research/sabench-rotation/minimal_reproducer.py --source research/sabench-rotation/upstream_excerpt.py | tee sabench-run.log
+          python -m pip freeze > audit-environment.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scientific-audit-results
+          path: |
+            research/scmultibench-silhouette/minimal_results.json
+            asw-run.log
+            sabench-run.log
+            audit-environment.txt
+          retention-days: 90
