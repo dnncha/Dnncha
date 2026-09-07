@@ -1,0 +1,52 @@
+{
+  "upstream_commit": "54d4e17c6dff5eab7ad93fee2a9bd70385ac750b",
+  "scope": "Synthetic native AnnData function execution; no original publication rankings.",
+  "python": "3.11.16",
+  "environment": {
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "pandas": "2.2.3",
+    "anndata": "0.10.9",
+    "h5py": "3.16.0",
+    "zarr": "2.18.7"
+  },
+  "sources": [
+    {
+      "path": "Tutorial/SABench.py",
+      "url": "https://raw.githubusercontent.com/Yunzhi-Yan/SABench/54d4e17c6dff5eab7ad93fee2a9bd70385ac750b/Tutorial/SABench.py",
+      "bytes": 26771,
+      "git_blob_sha1": "72990d43138389d359caa1a0b378d5deff969bfd",
+      "sha256": "257979f2b258621be48e5950b7ea44673ea038aefb4ced1de772356d02836ab5",
+      "cases": [
+        {
+          "angle": 0,
+          "scores": [0.75, 0.25]
+        },
+        {
+          "angle": 45,
+          "scores": [0.3333333333333333, 0.625]
+        }
+      ]
+    },
+    {
+      "path": "FeatureSimilarity/LandmarkBased.ipynb",
+      "url": "https://raw.githubusercontent.com/Yunzhi-Yan/SABench/54d4e17c6dff5eab7ad93fee2a9bd70385ac750b/FeatureSimilarity/LandmarkBased.ipynb",
+      "bytes": 159298,
+      "git_blob_sha1": "a56f85286ae48d27799d78624e3b0a4e59f625f3",
+      "sha256": "a15f17b9f9f539845f71604ef85110052e6b894a3701bdacb00611eda6933b75",
+      "cases": [
+        {
+          "angle": 0,
+          "scores": [0.75, 0.25]
+        },
+        {
+          "angle": 45,
+          "scores": [0.3333333333333333, 0.625]
+        }
+      ]
+    }
+  ],
+  "matching_overlap_function_asts": true,
+  "native_ann_data": true,
+  "result": "PASS"
+}
