@@ -13,6 +13,7 @@ Current focus: [dotmatch](https://github.com/Dnncha/dotmatch), a fast exact shor
 ## Open source
 
 - [dotmatch](https://github.com/Dnncha/dotmatch): exact short-DNA assignment for genomics workflows
+- [Scientific code audits](research/): source-linked reports, executable counterexamples and proposed corrections to research software.
 
 This profile is being kept intentionally focused around active, maintained work rather than old experiments.
 

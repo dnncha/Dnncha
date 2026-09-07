@@ -1,0 +1,14 @@
+--- a/evaluation_pipelines/scib_metrics/scib_metrics.py
++++ b/evaluation_pipelines/scib_metrics/scib_metrics.py
+@@ -91,9 +91,9 @@
+ print("ARI_cellType:", ari)
+ nmi = scib.me.nmi(adata_integrated, cluster_key="cluster", label_key="celltype")
+ print("NMI_cellType:", nmi)
+-asw = scib.me.silhouette(adata_integrated, label_key="cluster", embed="X_emb")
++asw = scib.me.silhouette(adata_integrated, label_key="celltype", embed="X_emb")
+ print("ASW_cellType:", asw)
+-iasw = scib.me.isolated_labels_asw(adata_integrated, batch_key="batch", label_key="cluster", embed="X_emb", iso_threshold=num)
++iasw = scib.me.isolated_labels_asw(adata_integrated, batch_key="batch", label_key="celltype", embed="X_emb", iso_threshold=num)
+ print("iASW:", iasw)
+ if1 = scib.me.isolated_labels_f1(adata_integrated, batch_key="batch", label_key="celltype", cluster_key="cluster", embed="X_emb", iso_threshold=num)
+ print("iF1:", if1)
