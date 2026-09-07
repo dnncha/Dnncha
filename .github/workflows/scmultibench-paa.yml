@@ -1,0 +1,36 @@
+name: scMultiBench PAA category invariance
+on:
+  pull_request:
+    paths: ['research/scmultibench-paa-categories/**', '.github/workflows/scmultibench-paa.yml']
+  push:
+    branches: [main]
+    paths: ['research/scmultibench-paa-categories/**', '.github/workflows/scmultibench-paa.yml']
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install native data dependencies
+        run: python -m pip install numpy==1.26.4 pandas==2.2.3 scipy==1.14.1 anndata==0.10.9 'zarr<3'
+      - name: Verify source and execute label-matching regressions
+        run: |
+          set -o pipefail
+          python research/scmultibench-paa-categories/verify_native.py | tee paa-native.log
+          python -m pip freeze > paa-environment.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scmultibench-paa-evidence
+          path: |
+            research/scmultibench-paa-categories/results
+            paa-native.log
+            paa-environment.txt
+          retention-days: 90

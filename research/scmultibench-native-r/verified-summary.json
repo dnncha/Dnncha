@@ -1,0 +1,20 @@
+{
+  "run_id": 34128607057,
+  "research_commit": "4551ce1fd06018d56c043c305746e5ac278e52a4",
+  "status": "passed",
+  "r_version": "4.4.3",
+  "synthetic_fixtures": 206,
+  "upstream_commit": "0c68f87d554a52e363dbfda2a9d1fa9538eeae9f",
+  "released_demo": {
+    "observations": 16305,
+    "classes": 26,
+    "zero_true_positive_classes": 0,
+    "original_specificity": 0.870107570032222,
+    "corrected_specificity": 0.994995899305141,
+    "original_macro_f1": 0.804534481651323,
+    "corrected_macro_f1": 0.804534481651323
+  },
+  "artifact_id": 10021147916,
+  "artifact_sha256": "8826d76ffbf6217e2575f05cefee39f537ab689921724546a13cbd9c6541dd7c",
+  "scope": "Released demo evaluation and synthetic tests; not corrected original-publication rankings."
+}
