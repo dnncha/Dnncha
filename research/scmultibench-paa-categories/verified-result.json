@@ -1,0 +1,68 @@
+{
+  "upstream_commit": "0c68f87d554a52e363dbfda2a9d1fa9538eeae9f",
+  "scope": "Native AnnData synthetic label-matching tests; no alignment solver or original publication rerun.",
+  "environment": {
+    "python": "3.11.16",
+    "anndata": "0.10.9",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.14.1",
+    "h5py": "3.16.0"
+  },
+  "implementations": [
+    {
+      "source": {
+        "file": "PASTE_pairwise.py",
+        "url": "https://raw.githubusercontent.com/PYangLab/scMultiBench/0c68f87d554a52e363dbfda2a9d1fa9538eeae9f/evaluation_pipelines/spatial_registration/PASTE_pairwise.py",
+        "bytes": 11447,
+        "git_blob_sha1": "61c65fda0f3b6cd58d7f3382847e4e7b9789cfe0",
+        "sha256": "27bafc03a72650d2621cacf53456b73af4b55c03dc72fe4a720db417f975ac13",
+        "helper_ast_sha256": "8ea713ac2a56c5401cabbb5a8090c487719a41c9c2b14fc02ea1739a3f56e9d5"
+      },
+      "primary": {
+        "same_category_order": {"original_good_bad": [1.0, 0.0], "shared_vocabulary_good_bad": [1.0, 0.0]},
+        "reordered_categories": {"original_good_bad": [0.0, 1.0], "shared_vocabulary_good_bad": [1.0, 0.0]}
+      },
+      "different_label_sets": {"original": 1.0, "corrected": 0.0},
+      "native_h5ad_roundtrip_passed": true,
+      "category_permutation_checks": 36,
+      "random_coupling_checks": 100
+    },
+    {
+      "source": {
+        "file": "PASTE_center.py",
+        "url": "https://raw.githubusercontent.com/PYangLab/scMultiBench/0c68f87d554a52e363dbfda2a9d1fa9538eeae9f/evaluation_pipelines/spatial_registration/PASTE_center.py",
+        "bytes": 11434,
+        "git_blob_sha1": "58f62baee12cf033642da6ee82caa2574cf5cd2b",
+        "sha256": "a9fab3633fd9de9b220e013d17f20923b651ded79f366267dcaaee16ed615b34",
+        "helper_ast_sha256": "8ea713ac2a56c5401cabbb5a8090c487719a41c9c2b14fc02ea1739a3f56e9d5"
+      },
+      "primary": {
+        "same_category_order": {"original_good_bad": [1.0, 0.0], "shared_vocabulary_good_bad": [1.0, 0.0]},
+        "reordered_categories": {"original_good_bad": [0.0, 1.0], "shared_vocabulary_good_bad": [1.0, 0.0]}
+      },
+      "different_label_sets": {"original": 1.0, "corrected": 0.0},
+      "native_h5ad_roundtrip_passed": true,
+      "category_permutation_checks": 36,
+      "random_coupling_checks": 100
+    },
+    {
+      "source": {
+        "file": "PASTE2_metric.py",
+        "url": "https://raw.githubusercontent.com/PYangLab/scMultiBench/0c68f87d554a52e363dbfda2a9d1fa9538eeae9f/evaluation_pipelines/spatial_registration/PASTE2_metric.py",
+        "bytes": 8926,
+        "git_blob_sha1": "1e2df97ed73a368cf6a75073a190275f56952e5c",
+        "sha256": "bc3609f0647d33b4a41d3a65bbb269275c8a60fd986c49f886b29d61bf35d6e6",
+        "helper_ast_sha256": "8ea713ac2a56c5401cabbb5a8090c487719a41c9c2b14fc02ea1739a3f56e9d5"
+      },
+      "primary": {
+        "same_category_order": {"original_good_bad": [1.0, 0.0], "shared_vocabulary_good_bad": [1.0, 0.0]},
+        "reordered_categories": {"original_good_bad": [0.0, 1.0], "shared_vocabulary_good_bad": [1.0, 0.0]}
+      },
+      "different_label_sets": {"original": 1.0, "corrected": 0.0},
+      "native_h5ad_roundtrip_passed": true,
+      "category_permutation_checks": 36,
+      "random_coupling_checks": 100
+    }
+  ]
+}
