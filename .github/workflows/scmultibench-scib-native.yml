@@ -1,0 +1,36 @@
+name: scMultiBench native scib metrics
+on:
+  pull_request:
+    paths: ['research/scmultibench-scib-native/**', '.github/workflows/scmultibench-scib-native.yml']
+  push:
+    branches: [main]
+    paths: ['research/scmultibench-scib-native/**', '.github/workflows/scmultibench-scib-native.yml']
+permissions:
+  contents: read
+jobs:
+  reproduce:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Install scMultiBench evaluation reference stack
+        run: python -m pip install 'numpy==1.26.4' 'pandas==2.2.3' 'scipy==1.14.1' 'scikit-learn==1.5.2' 'anndata==0.10.9' 'scanpy==1.10.4' 'scib==1.1.5'
+      - name: Execute source-verified native scib regressions
+        run: |
+          set -o pipefail
+          python research/scmultibench-scib-native/verify_native.py | tee scib-native.log
+          python -m pip freeze > scib-native-environment.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scmultibench-scib-native-evidence
+          path: |
+            research/scmultibench-scib-native/results
+            scib-native.log
+            scib-native-environment.txt
+          retention-days: 90
