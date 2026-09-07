@@ -24,6 +24,7 @@ jobs:
         run: |
           set -o pipefail
           python research/scmultibench-paa-categories/verify_native.py | tee paa-native.log
+          python research/scmultibench-paa-categories/verify_additional_paths.py | tee paa-additional.log
           python -m pip freeze > paa-environment.txt
       - uses: actions/upload-artifact@v4
         if: always()
@@ -31,6 +32,8 @@ jobs:
           name: scmultibench-paa-evidence
           path: |
             research/scmultibench-paa-categories/results
+            research/scmultibench-paa-categories/additional-results
             paa-native.log
+            paa-additional.log
             paa-environment.txt
           retention-days: 90
