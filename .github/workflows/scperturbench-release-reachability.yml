@@ -1,0 +1,30 @@
+name: scPerturBench released-result reachability
+on:
+  push:
+    branches: [audit/scperturbench-release-reachability-20260907]
+    paths: ['research/scperturbench-release-reachability/**', '.github/workflows/scperturbench-release-reachability.yml']
+  pull_request:
+    paths: ['research/scperturbench-release-reachability/**', '.github/workflows/scperturbench-release-reachability.yml']
+permissions:
+  contents: read
+jobs:
+  analyze:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify and inventory released cellular-context tables
+        run: python research/scperturbench-release-reachability/analyze_released_results.py | tee scperturbench-release-reachability.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: scperturbench-release-reachability
+          path: |
+            research/scperturbench-release-reachability/result.json
+            scperturbench-release-reachability.log
+          retention-days: 90
