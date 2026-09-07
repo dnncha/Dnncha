@@ -1,0 +1,55 @@
+{
+  "run_id": 34139782478,
+  "research_commit": "058dec4506832b357e98f2e24c1a587928ee04aa",
+  "status": "passed",
+  "artifact_id": 10025451265,
+  "artifact_sha256": "4d038bee0a0795596c2f3d6af61de588944dcdc2db137035fdfcb33546d7035c",
+  "reference_environment": {
+    "python": "3.10.21",
+    "scib": "1.1.5",
+    "anndata": "0.10.9",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.5.2"
+  },
+  "synthetic": {
+    "ordinary_asw": {
+      "biological_released_cluster": 0.9192562199107217,
+      "biological_celltype": 0.9192562199107217,
+      "technical_released_cluster": 0.9963883077703815,
+      "technical_celltype": 0.49180269950470734
+    },
+    "isolation_threshold": {
+      "batch_count": 3,
+      "released_threshold": 4,
+      "default_selected": ["R"],
+      "released_selected": ["C1", "C2", "C3", "C4", "R"],
+      "candidate_A_default": 0.9354775052538429,
+      "candidate_A_released_threshold": 0.5656422720969825,
+      "candidate_B_default": 0.5251509457499101,
+      "candidate_B_released_threshold": 0.7723953788056134
+    }
+  },
+  "released_demo": {
+    "scope": "Repository embedding demo; not identified as a named original-publication run.",
+    "observations": 28574,
+    "embedding_dimensions": 15,
+    "batches": 3,
+    "celltypes": 28,
+    "clusters": 28,
+    "released_cluster_ASW": 0.614295482635498,
+    "celltype_ASW": 0.5696005523204803,
+    "released_cluster_iASW_threshold4": 0.6303640834438349,
+    "celltype_iASW_threshold4": 0.5768824066368065,
+    "celltype_iASW_scib_default": 0.86563840508461,
+    "scib_default_isolated_celltypes": ["Erythroid "],
+    "released_threshold_celltypes_count": 28,
+    "input_git_blobs": {
+      "cty1.csv": "bc04ec13316d61b673827fe6cc028787284bd341",
+      "cty2.csv": "a156ed8c1165b6abe57985487f2d3d70bb389b56",
+      "cty3.csv": "1b69f1c6c1be922dde3c41fa13641657c4f8175a",
+      "embedding.h5": "203bbdbacaa345fb898ce26fa7b53322c12fe471",
+      "sinfonia_clustering.h5": "445b9c4d41e24a46344b37611e79a52a29911d84"
+    }
+  }
+}
