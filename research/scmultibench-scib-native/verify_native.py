@@ -28,7 +28,7 @@ SCIB_COMMIT = '59ae6eee5e611d9d3db067685ec96c28804e9127'  # v1.1.5
 SOURCES = [
     ('scMultiBench', f'https://raw.githubusercontent.com/PYangLab/scMultiBench/{SCMULTI_COMMIT}/evaluation_pipelines/scib_metrics/scib_metrics.py', 'b8549d293d2a6eaef9af91bd7842dc68e15e9fcf'),
     ('scib-isolated', f'https://raw.githubusercontent.com/theislab/scib/{SCIB_COMMIT}/scib/metrics/isolated_labels.py', '2e8258ab79f972cd983f902f20e3cb247db820cc'),
-    ('scib-silhouette', f'https://raw.githubusercontent.com/theislab/scib/{SCIB_COMMIT}/scib/metrics/silhouette.py', '8d44b3aa8c2e90e3e1792db35efc7ca4fdc25a7'),
+    ('scib-silhouette', f'https://raw.githubusercontent.com/theislab/scib/{SCIB_COMMIT}/scib/metrics/silhouette.py', '8d44b3aa8c2e90e3e1792db35efc7ca4fdc25a7a'),
 ]
 
 
