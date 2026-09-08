@@ -15,7 +15,7 @@ Finding a bug does not tell us whether it affected a published result. I documen
 
 [Read the investigations](https://cheerfulduck.com/research) · [How I investigate](https://cheerfulduck.com/research/methodology) · [Study-impact evidence](https://cheerfulduck.com/research/study-impact)
 
-I use AI to help prepare these reports and take responsibility for them. They have not had independent scientific review. I publish corrections and substantive responses alongside the work. I also build software in this area; these audits do not show that my tools are better than the ones I investigate.
+I use AI to help prepare these reports and take responsibility for them. They have not had independent scientific review. I publish corrections and substantive responses alongside the work.
 
 ## Work with me
 
