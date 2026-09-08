@@ -2,8 +2,6 @@
 
 I build open-source bioinformatics tools and investigate the code behind scientific results at [Cheerful Duck](https://cheerfulduck.com/), based in Ireland.
 
-My work starts with a question you can test and ends with evidence you can inspect.
-
 ## Bioinformatics software
 
 - **[DotMatch](https://dnncha.github.io/dotmatch/)** — deterministic assignment of sequencing reads to known CRISPR guides, inline barcodes, primers and other targets. [Source](https://github.com/dnncha/dotmatch).
@@ -11,16 +9,16 @@ My work starts with a question you can test and ends with evidence you can inspe
 
 ## Scientific red-teaming
 
-I investigate whether scientific software computes what it claims to compute, develop reproducible tests and propose corrections. The work spans sequence processing, genomic intervals, statistical calculations and single-cell benchmarks.
+I check calculations in scientific software, write tests for bugs I find and propose fixes. So far, this has covered sequence processing, genomic intervals, statistics and single-cell benchmarks.
 
-A demonstrated software defect, evidence that an analysis used it, and a measured change to a published result are separate findings. Reports preserve those distinctions, with pinned source links, execution details and explicit limitations.
+Finding a bug does not tell us whether it affected a published result. I document what I tested, link to the exact code and explain what remains unknown.
 
 [Read the investigations](https://cheerfulduck.com/research) · [How I investigate](https://cheerfulduck.com/research/methodology) · [Study-impact evidence](https://cheerfulduck.com/research/study-impact)
 
-The reports are prepared with AI assistance and have not undergone independent scientific review. I am responsible for the work; corrections and substantive responses remain part of the record. My own software projects are disclosed interests, not evidence of superiority over tools I audit.
+I use AI to help prepare these reports and take responsibility for them. They have not had independent scientific review. I publish corrections and substantive responses alongside the work. I also build software in this area; these audits do not show that my tools are better than the ones I investigate.
 
 ## Work with me
 
-For a focused scientific-code audit or reproducibility investigation, [start with the calculation or result you need to trust](https://cheerfulduck.com/research/bioinformatics-code-audits).
+If you need help checking a scientific calculation or reproducing a result, [get in touch](https://cheerfulduck.com/research/bioinformatics-code-audits).
 
 [Cheerful Duck](https://cheerfulduck.com/) · [About and disclosed interests](https://cheerfulduck.com/research/authors/donncha-otoole)
