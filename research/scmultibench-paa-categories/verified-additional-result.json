@@ -1,0 +1,57 @@
+{
+  "scope": "Additional source-path propagation check; synthetic couplings only, no alignment solver or publication rerun.",
+  "implementations": [
+    {
+      "source": {
+        "file": "gpsa_metric.py",
+        "url": "https://raw.githubusercontent.com/PYangLab/scMultiBench/0c68f87d554a52e363dbfda2a9d1fa9538eeae9f/evaluation_pipelines/spatial_registration/gpsa_metric.py",
+        "bytes": 8351,
+        "git_blob_sha1": "ff7a7530010769f3a16dedd732d58204f63c18fa",
+        "sha256": "afa8a8e13c917627f72e05050bf61957205b2f0666bc69f44bac865aed7e219e",
+        "helper_ast_sha256": "8ea713ac2a56c5401cabbb5a8090c487719a41c9c2b14fc02ea1739a3f56e9d5"
+      },
+      "same_order_good_bad": [
+        1.0,
+        0.0
+      ],
+      "reordered_good_bad": [
+        0.0,
+        1.0
+      ],
+      "shared_vocabulary_good_bad": [
+        1.0,
+        0.0
+      ],
+      "different_label_sets_identity": {
+        "original": 1.0,
+        "corrected": 0.0
+      }
+    },
+    {
+      "source": {
+        "file": "SPIRAL_metric.py",
+        "url": "https://raw.githubusercontent.com/PYangLab/scMultiBench/0c68f87d554a52e363dbfda2a9d1fa9538eeae9f/evaluation_pipelines/spatial_registration/SPIRAL_metric.py",
+        "bytes": 24664,
+        "git_blob_sha1": "e6caa02c3a59c3f1e5bbcdd9b0de55b0b274be6b",
+        "sha256": "a22c4111a01c689779d568a935ba6e29c43c468d93a8165ffba061d00a316e36",
+        "helper_ast_sha256": "8ea713ac2a56c5401cabbb5a8090c487719a41c9c2b14fc02ea1739a3f56e9d5"
+      },
+      "same_order_good_bad": [
+        1.0,
+        0.0
+      ],
+      "reordered_good_bad": [
+        0.0,
+        1.0
+      ],
+      "shared_vocabulary_good_bad": [
+        1.0,
+        0.0
+      ],
+      "different_label_sets_identity": {
+        "original": 1.0,
+        "corrected": 0.0
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@ Donncha O'Toole · Cheerful Duck · 7 September 2026
 
 The released spatial-registration PAA scorer compares categorical integer codes from different slices without giving those codes a shared biological meaning. Changing one slice's category order can turn a perfect label match into a score of zero and a completely wrong match into a score of one, while the observation labels, coordinates, expression data and test couplings stay unchanged.
 
-The defect has now been source-verified in **five released evaluator paths**: PASTE pairwise, PASTE center, PASTE2, GPSA and SPIRAL. [Upstream issue #5](https://github.com/PYangLab/scMultiBench/issues/5) · [latest passing run](https://github.com/dnncha/Dnncha/actions/runs/34141189095) · [primary native test](verify_native.py) · [GPSA/SPIRAL propagation test](verify_additional_paths.py)
+The defect has now been source-verified in **five released evaluator paths**: PASTE pairwise, PASTE center, PASTE2, GPSA and SPIRAL. [Upstream issue #5](https://github.com/PYangLab/scMultiBench/issues/5) · [recorded passing run](https://github.com/dnncha/Dnncha/actions/runs/34141189095) · [primary native test](verify_native.py) · [GPSA/SPIRAL propagation test](verify_additional_paths.py)
 
 ## The error
 
@@ -73,3 +73,9 @@ python research/scmultibench-paa-categories/verify_additional_paths.py
 ```
 
 [All scientific audit reports](../)
+
+## Durable evidence and publication
+
+The [primary verified result](verified-result.json) and [GPSA/SPIRAL verified result](verified-additional-result.json) remain in this repository after CI artifacts expire. The additional result was retrieved from the passing final-PR run [34141412518](https://github.com/dnncha/Dnncha/actions/runs/34141412518) on 8 September 2026. All five downloaded source snapshots matched the Git blob hashes listed above; the additional result records the stated 1/0 to 0/1 reversal and corrected 1/0 scores. This check verifies the saved execution evidence; it is not a new alignment-solver or publication-data run.
+
+[Read the Cheerful Duck report](https://cheerfulduck.com/research/audits/scmultibench-paa-categories) · [Publication-impact limits](https://cheerfulduck.com/research/study-impact)
