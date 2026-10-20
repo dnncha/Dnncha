@@ -1,6 +1,8 @@
 # Donncha O’Toole
 
-I build open-source bioinformatics tools and investigate the code behind scientific results at [Cheerful Duck](https://cheerfulduck.com/), based in Ireland.
+I build open-source bioinformatics tools and investigate the code behind scientific results, based in Ireland.
+
+[X / @dnncha](https://x.com/dnncha) · [Notchbird](https://notchbird.com/)
 
 ## Bioinformatics software
 
@@ -13,12 +15,4 @@ I check calculations in scientific software, write tests for bugs I find and pro
 
 Finding a bug does not tell us whether it affected a published result. I document what I tested, link to the exact code and explain what remains unknown.
 
-[Read the investigations](https://cheerfulduck.com/research) · [How I investigate](https://cheerfulduck.com/research/methodology) · [Study-impact evidence](https://cheerfulduck.com/research/study-impact)
-
 I use AI to help prepare these reports and take responsibility for them. They have not had independent scientific review. I publish corrections and substantive responses alongside the work.
-
-## Work with me
-
-If you need help checking a scientific calculation or reproducing a result, [get in touch](https://cheerfulduck.com/research/bioinformatics-code-audits).
-
-[Cheerful Duck](https://cheerfulduck.com/) · [About and disclosed interests](https://cheerfulduck.com/research/authors/donncha-otoole)
